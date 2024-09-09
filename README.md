@@ -2,6 +2,20 @@
 
 A CLI tool for generating .env files from .env.template files via prompts and random values.
 
+## Installation
+
+Using `curl`:
+  
+ ```sh
+ curl -sfL https://raw.githubusercontent.com/flexstack/envtpl/main/install.sh | sh
+ ```
+
+Using `go install`:
+
+```sh
+go install github.com/flexstack/envtpl
+```
+
 ## Usage
 
 ```sh
