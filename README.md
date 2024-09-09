@@ -7,7 +7,7 @@ A CLI tool for generating .env files from .env.template files via prompts and ra
 Using `curl`:
   
  ```sh
- curl -sfL https://raw.githubusercontent.com/flexstack/envtpl/main/install.sh | sh
+ curl -sfL https://raw.githubusercontent.com/flexstack/envtpl/main/install | bash
  ```
 
 Using `go install`:
