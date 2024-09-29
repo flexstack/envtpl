@@ -19,11 +19,24 @@ import (
 	flag "github.com/spf13/pflag"
 )
 
+var (
+	version = "dev"
+	// commit  = "none"
+	// date    = "unknown"
+)
+
 func main() {
 	// The first argument is the path to the template file
 	var file string
 	flag.StringVarP(&file, "output", "o", ".env", "The path to output the .env file")
+	var versionb bool
+	flag.BoolVarP(&versionb, "version", "v", false, "Print the version")
 	flag.Parse()
+
+	if versionb {
+		fmt.Println(version)
+		os.Exit(0)
+	}
 
 	path := flag.Arg(0)
 	if path == "" {
